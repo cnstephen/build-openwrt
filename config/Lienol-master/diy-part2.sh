@@ -23,8 +23,6 @@ sed -i 's/192.168.1.1/10.10.1.2/g' package/base-files/files/bin/config_generate
 # ------------------------------- Other started -------------------------------
 #
 # Add luci-app-amlogic
-sed -i "/helloworld/d" "feeds.conf.default"
-echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
