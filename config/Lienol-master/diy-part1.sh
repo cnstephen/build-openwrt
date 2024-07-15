@@ -11,4 +11,8 @@
 
 # other
 # rm -rf package/utils/{ucode,fbtest}
+# fw876/helloworld
+sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+# Add a feed source
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
